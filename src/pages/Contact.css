@@ -1,0 +1,70 @@
+
+.contact-info-contanier {
+  padding: 40px 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* Optional: Adjust the width as needed */
+  border-radius: 15px;
+  margin-top: 0px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: #F07328;
+  color: white;
+}
+
+
+.contact-info-contanier label {
+  margin-left: 2px;
+  font-family: 'Great Vibes', cursive;
+}
+
+input[type='number']
+{
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  border-radius: 12px;
+}
+input[type='text']
+{
+  background-color: #eee;
+border: none;
+padding: 12px 15px;
+margin: 8px 0;
+width: 100%;
+border-radius: 12px;
+}
+input[type='email']
+{
+  background-color: #eee;
+border: none;
+padding: 12px 15px;
+margin: 8px 0;
+width: 100%;
+border-radius: 12px;
+}
+
+textarea{
+    background-color: #eee;
+border: none;
+padding: 12px 15px;
+margin: 8px 0;
+height: 100px;
+width: 100%;
+border-radius: 12px;
+}
+.Contact-submit{
+    background-color: #aeed9e;
+    margin-left: ca(100vh-180px);
+    padding: 10px 20px;
+    border-color: none;
+    border-radius: 12px;
+}
+
+.contact-img {
+  width: 500px;
+  height: 10px; 
+  margin-right: 100px;
+  margin-left: auto;
+}

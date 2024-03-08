@@ -1,0 +1,37 @@
+
+.contanier{
+  position: relative;
+  
+}
+.slider-show{
+  position: absolute;
+  width: calc(40%);
+  top: 30%;
+  left: 12%;
+}
+h3{
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 'bold';
+  color:white;
+}
+.get-started {
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translateY(-50%);
+  background-color: #21a700;
+  border-radius: 15px;
+  color: white;
+  padding: 15px 32px;
+  font-size: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.get-started:hover {
+  padding: 20px 35px;
+  font-size: 1.2rem; /* Increase text size on hover */
+}
+
