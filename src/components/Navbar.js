@@ -31,13 +31,7 @@ function Navbar() {
       <React.Fragment>
         <AppBar sx={{ backgroundColor: 'white', display: 'flex', alignItems: 'center', boxShadow: 'none' }}>
           <img src={logo} alt='logo' style={{ height: '55px', width: '170px' }} />
-          <IconButton
-            edge="start"
-            color="black"
-            aria-label="menu"
-            onClick={handleMenuClick}
-            sx={{ display: { xs: 'block', md: 'none' }, marginLeft:'auto' }}
-          >
+          <IconButton edge="start" color="black" aria-label="menu" onClick={handleMenuClick} sx={{ display: { xs: 'block', md: 'none' }, marginLeft:'auto' }}>
             <MenuIcon />
           </IconButton>
           <Tabs centered sx={{ display: { xs: 'none', md: 'flex' } }}>
