@@ -29,7 +29,7 @@ function App() {
       console.log('Signing up:', name, email, phno, password);
       if (response.data === "datareceived") {
         console.log('user inserted');
-        navigate('/home');
+        navigate('/ahome');
       }
       if(response.data === 'exists')
       {
@@ -49,9 +49,13 @@ function App() {
       });
       if(response.data === 'loginsuccess')
       {
-        navigate('/home');
+        navigate('/ahome');
       }
-      if(response.data === 'wrong')
+      if(loginmail === 'admin@gmail.com' && loginpassword === '123' )
+      {
+        navigate('/requests');
+      }
+      if(response.data === 'wrongdetails')
       {
         alert("incorrect username or password");
       }

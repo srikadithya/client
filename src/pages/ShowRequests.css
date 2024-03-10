@@ -1,0 +1,9 @@
+.contanier{
+    width: 50%;
+    background-color: antiquewhite;
+}
+.contanier button{
+    width: 100px;
+    background-color: blue;
+    color: white;
+}
