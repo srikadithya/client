@@ -81,11 +81,11 @@ p {
   font-family: 'Great Vibes', cursive;
   font-size: 1.3rem;
 }
-line h2 {
+.line h2 {
   font-family: 'Great Vibes', cursive;
   color: #A8C34A;
   font-weight: bold;
-  text-align: center;
+  font-size: 1rem;
 }
 
 .line {

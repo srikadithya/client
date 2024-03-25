@@ -12,7 +12,7 @@ const tabStyle = {
   textTransform: 'none',
 };
 
-function Navbar() {
+function AdminNav() {
   const [menuAnchorEl, setMenuAnchorEl] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -35,11 +35,13 @@ function Navbar() {
             <MenuIcon />
           </IconButton>
           <Tabs centered sx={{ display: { xs: 'none', md: 'flex' } }}>
-            <Tab style={{ ...tabStyle }} label='Home' component={Link} to='/' disableRipple disableFocusRipple />
-            <Tab style={{ ...tabStyle }} label='AboutPC' component={Link} to="/about" disableRipple disableFocusRipple />
+            <Tab style={{ ...tabStyle }} label='Home' component={Link} to='/ahome' disableRipple disableFocusRipple />
+            <Tab style={{ ...tabStyle }} label='Requests' component={Link} to='/requests' disableRipple disableFocusRipple />
+            <Tab style={{ ...tabStyle }} label='About PC' component={Link} to="/about" disableRipple disableFocusRipple />
             <Tab style={{ ...tabStyle }} label='Contact' component={Link} to="/contact" disableRipple disableFocusRipple />
-            <Tab style={{ ...tabStyle }} label='Help' component={Link} to="/help" disableRipple disableFocusRipple />
+            <Tab style={{ ...tabStyle }} label='Help' disableRipple disableFocusRipple component={Link} to="/help" />
             <Tab style={{ ...tabStyle }} label='Donate' component={Link} to='/donate' disableRipple disableFocusRipple />
+            <Tab style={{ ...tabStyle }} label='Accesories' component={Link} to='/donate' disableRipple disableFocusRipple />
           </Tabs>
         </AppBar>
         <Menu
@@ -48,9 +50,10 @@ function Navbar() {
           onClose={handleMenuClose}
         >
           <MenuItem onClick={handleMenuClose} component={Link} to="/">Home</MenuItem>
-          <MenuItem onClick={handleMenuClose} component={Link} to="/about">About PC</MenuItem>
+          <MenuItem onClick={handleMenuClose} component={Link} to="/adopt">Adopt a pet</MenuItem>
+          <MenuItem onClick={handleMenuClose}>About PC</MenuItem>
           <MenuItem onClick={handleMenuClose} component={Link} to="/contact">Contact</MenuItem>
-          <MenuItem onClick={handleMenuClose} component={Link} to="/help" >Help</MenuItem>
+          <MenuItem onClick={handleMenuClose}>Help</MenuItem>
           <MenuItem onClick={handleMenuClose} component={Link} to="/donate">Donate</MenuItem>
           <MenuItem onClick={handleMenuClose} component={Link} to="/login">Login</MenuItem>
         </Menu>
@@ -59,4 +62,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default AdminNav;

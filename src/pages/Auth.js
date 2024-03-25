@@ -51,15 +51,15 @@ function App() {
       {
         navigate('/ahome');
       }
-      if(loginmail === 'admin@gmail.com' && loginpassword === '123' )
+      else if(loginmail === 'admin@gmail.com' && loginpassword === '123' )
       {
         navigate('/requests');
       }
-      if(response.data === 'wrongdetails')
+      else if(response.data === 'wrongdetails')
       {
         alert("incorrect username or password");
       }
-      if(response.data === 'notexists') 
+      else if(response.data === 'notexists') 
       {
         alert('No user found')
       }

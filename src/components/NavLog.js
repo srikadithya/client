@@ -37,7 +37,7 @@ function NavLog() {
           <Tabs centered sx={{ display: { xs: 'none', md: 'flex' } }}>
             <Tab style={{ ...tabStyle }} label='Home' component={Link} to='/ahome' disableRipple disableFocusRipple />
             <Tab style={{ ...tabStyle }} label='Adopt a pet' component={Link} to='/adopt' disableRipple disableFocusRipple />
-            <Tab style={{ ...tabStyle }} label='About PLC' component={Link} to="/about" disableRipple disableFocusRipple />
+            <Tab style={{ ...tabStyle }} label='About PC' component={Link} to="/about" disableRipple disableFocusRipple />
             <Tab style={{ ...tabStyle }} label='Contact' component={Link} to="/contact" disableRipple disableFocusRipple />
             <Tab style={{ ...tabStyle }} label='Help' disableRipple disableFocusRipple component={Link} to="/help" />
             <Tab style={{ ...tabStyle }} label='Donate' component={Link} to='/donate' disableRipple disableFocusRipple />
